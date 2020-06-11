@@ -1,0 +1,8 @@
+stages:
+- name: apt update
+  steps:
+  - runScriptConfig:
+      image: gcc:latest
+      shellScript: apt update
+timeout: 60
+notification: {}
